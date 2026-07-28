@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "HomeVault",
+    "slug": "homevault",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "homevault",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.homevault.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "需要相机权限来拍摄柜子和物品的照片"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF8F0"
+      },
+      "package": "com.homevault.app",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-camera",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "需要访问相册来选取图片"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

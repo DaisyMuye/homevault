@@ -1,0 +1,9 @@
+node_modules/
+.expo/
+dist/
+*.tsbuildinfo
+*.js.map
+*.d.ts.map
+expo-env.d.ts
+.env
+.env.local
